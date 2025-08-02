@@ -2,14 +2,14 @@
 
 console.log("We are testing the functionality of a JavaScript! This is a personal portfolio website.")
 
-const dateSpan = document.getElementById('dateTime');
+const datespan = document.getElementById('date-time');
 const time = new Date().toLocaleString();
-const currentContent = dateSpan.textContent
+const currentcontent = datespan.textContent
 
-console.log(dateSpan)
+console.log(datespan)
 console.log(time)
-console.log(currentContent)
+console.log(currentcontent)
 
-const newContent = currentContent.replace('$DATE', time)
+const newcontent = currentcontent.replace('$DATE', time)
 
-dateSpan.textContent = newContent
+datespan.textContent = newcontent
