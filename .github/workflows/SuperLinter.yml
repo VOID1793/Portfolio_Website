@@ -40,3 +40,4 @@ jobs:
           FAIL_ON_WARNING: false
           VALIDATE_HTML_PRETTIER: false
           VALIDATE_JAVASCRIPT_PRETTIER: false
+          VALIDATE_YAML_PRETTIER: false
