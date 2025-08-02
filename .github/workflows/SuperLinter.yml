@@ -1,0 +1,40 @@
+---
+name: super-linter
+
+on: # yamllint disable-line rule:truthy
+  push:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint_super_linter:
+    name: Lint Website
+    runs-on: ubuntu-latest
+
+    steps:
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      #################################
+      # Run Linters against code base  #
+      # If no matching files are found,#
+      # that Linter will not run.      #
+      #################################
+      - name: Lint Code Base
+        uses: super-linter/super-linter@v8
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          IGNORE_GITIGNORED_FILES: true
+          ENABLE_GITHUB_ACTIONS_STEP_SUMMARY: true
+          FAIL_ON_WARNING: false
