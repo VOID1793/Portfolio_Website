@@ -1,4 +1,9 @@
 #headshot {
-    width: 300px;
+    width: 20%;
     height: auto;
+}
+
+.Table {
+    border: 2px solid black;
+    border-collapse: collapse;
 }

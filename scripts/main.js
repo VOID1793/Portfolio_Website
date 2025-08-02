@@ -6,6 +6,10 @@ const dateSpan = document.getElementById('dateTime');
 const time = new Date().toLocaleString();
 const currentContent = dateSpan.textContent
 
-const newContent = currentContent.replace('$DATETIME', time)
+console.log(dateSpan)
+console.log(time)
+console.log(currentContent)
+
+const newContent = currentContent.replace('$DATE', time)
 
 dateSpan.textContent = newContent
