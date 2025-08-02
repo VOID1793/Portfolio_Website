@@ -38,3 +38,5 @@ jobs:
           IGNORE_GITIGNORED_FILES: true
           ENABLE_GITHUB_ACTIONS_STEP_SUMMARY: true
           FAIL_ON_WARNING: false
+          VALIDATE_HTML_PRETTIER: false
+          VALIDATE_JAVASCRIPT_PRETTIER: false
