@@ -3,15 +3,40 @@ header, body, footer {
 }
 
 hr {
+    color: rgb(56, 102, 143);
+}
 
+header {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#personal-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-family:'Courier New', Courier, monospace
 }
 
 #headshot {
     width: 20%;
     height: auto;
+
+    object-fit: cover;
+    border-radius: 5%;
+    
+}
+
+.header-content {
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
-    align-items: center;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: rgba(rgb(146, 56, 56), green, blue, alpha);
+
 }
 
 .table {
