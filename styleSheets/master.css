@@ -1,6 +1,17 @@
+header, body, footer {
+    background-color: #6d5964;
+}
+
+hr {
+
+}
+
 #headshot {
     width: 20%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
 
 .table {
