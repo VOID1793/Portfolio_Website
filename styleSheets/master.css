@@ -215,13 +215,18 @@ footer {
     font-size: x-large;
 }
 
-#cg-main {
-    text-align: center;
-    display: flexbox;
-    justify-content: center;
+
+#video {
+    border-radius: 5%;
 }
 
-#showcase {
+#cg-parent {
+
+    width: 80%;
+    text-align: center;
+}
+
+#cg-main div {
     background-image: radial-gradient(circle at right, rgb(22, 105, 95), rgb(13, 69, 23));
     
     border-radius: 1%;
@@ -236,11 +241,28 @@ footer {
 
     margin: 1%;
 
-    width: fit-content;
+    width: 50%;
     height: auto;
-    display: flexbox;
-    justify-content: center;
-    text-align: center;
+
 
     font-size: x-large;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
+
+#contactme {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+
+    font-size: x-large;
+    font-weight: bold;
+}
+

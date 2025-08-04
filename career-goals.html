@@ -9,42 +9,96 @@
         <link rel="icon" href="./attachments/images/favicon.ico" type="image/x-icon">
     </head>
 
-    <body>
+    <body id="cg-body">
 
         <header id="cg-header">
             <h1 class="page-title">Career Goals</h1>
             <div id="navigation">
                 <nav>
 
-                    <a class="navlinks" href="career-goals.html"> Career Goals </a>
-                    <a class="navlinks" href="cover-letter.html"> Cover Letter </a>
-                    <a class="navlinks" href="resume.html"> Digital Resume</a>
+                    <a class="navlinks" href="career-goals.html"> Career Goals ✅ </a>
+                    <a class="navlinks" href="cover-letter.html"> Cover Letter 📨 </a>
+                    <a class="navlinks" href="resume.html"> Digital Resume 📜</a>
                     <a class="navlinks" href="https://github.com/VOID1793"> <em>GitHub </em>💡</a></h3>
-                    <a class="navlinks" href="https://www.linkedin.com/in/sellnet "> <em>LinkedIn </em>🗂️</a></h3>
+                    <a class="navlinks" href="https://www.linkedin.com/in/sellnet "> <em>LinkedIn </em>🖇️</a></h3>
 
                 </nav>
             </div>
         </header>
 
         <hr>
-        <main id="cg-main">
-            <section id="overview">
-                <div id="showcase">
-                    <h2>How do I want my career to look?</h2>
-                    <button id="play-button">Enjoy The Music! ⏯️</button>
-                    <audio id="music" src="./attachments/audio/background-music.mp3"></audio>
-                    <video id="video" width="640" height="360" autoplay loop muted>
-                        <source src="./attachments/videos/Networking.mp4" type="video/mp4">
-                        Your browser may not support this video tag
-                    </video>
-                </div>
-                <article>
-                    
-                </article>
-            </section>
+        <div id="cg-parent">
+            <main id="cg-main">
 
-            <section id=""></section>
-        </main>
+                    <div id="showcase">
+
+                        <h2>How do I want my career to look?</h2>
+                        <button id="play-button"> <strong>Enjoy The Music! ⏯️</strong></button>
+                        <audio id="music" src="./attachments/audio/background-music.mp3"></audio>
+                        <video id="video" width="640" height="360" autoplay loop muted>
+                            <source src="./attachments/videos/Networking.mp4" type="video/mp4">
+                            Your browser may not support this video tag
+                        </video>
+                    </div>
+                    <div>
+                        <article id="goals">
+                            Although my career is only just beginning, I cannot wait to see where it takes me!
+                            Currently I am a Cybersecurity Engineer, but I also deeply enjoy DevOps / Platoform
+                            Engineering, Networking, and Automation. I would genuinely be happy working in a
+                            variety of technology sectors!
+                            <br>
+                            <br>
+                            If you are interested in getting in touch with me, feel free to reach out with the 
+                            form below!
+                        </article>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <form id="contactme" action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+
+                            <label for="first-name">First Name: </label>
+                            <input type="text" name="First Name" id="first-name" required>
+
+                            <label for="last-name">Last Name: </label>
+                            <input type="text" name="Last Name" id="last-name" required>
+
+                            <label for="company-name">Company Name: </label>
+                            <input type="text" name="Company Name" id="company-name" required>
+
+                            <label for="email-address">Email Address: </label>
+                            <input type="email" name="Email Address" id="email-address" required>
+
+                            <label for="phone-number">Phone Number: </label>
+                            <input type="tel" name="Phone Number" id="phone-number" required>
+
+                            <label for="message">Message: </label>
+                            <textarea name="Message" id="message"></textarea>
+                            
+                            <label for="best-time-pm">Contact Me (PM): </label>
+                            <input type="radio" name="PM" id="best-time-pm" required>
+
+                            <label for="best-time-am">Contact Me (AM): </label>
+                            <input type="radio" name="AM" id="best-time-am" required>
+
+                            <label for="best-time-anytime">Contact Me (Anytime): </label>
+                            <input type="radio" name="Anytime" id="best-time-anytime" required>
+                            
+                            <label for="contact-type">Select a Contact Method: </label>
+                            <select name="contact-type" id="contact-type">
+
+                                <option value="Phone">Phone</option>
+                                <option value="Email">Email</option>
+                                <option value="Text">Text</option>
+
+                            </select>
+
+                            <button type="submit">SUBMIT</button>
+
+                        </form>
+                </div>
+            </main>
+        </div>
         <script src="./scripts/main.js"></script>
     </body>
 </html>
