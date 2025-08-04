@@ -48,7 +48,7 @@ hr {
     
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 10%;
     
 }
 
@@ -74,8 +74,13 @@ hr {
     cursor: pointer;
 }
 
+#resume-header {
+    display: flexbox;
+    justify-content: center;
+}
+
 #headshot {
-    width: 10%;
+    width: 15%;
     height: auto;
 
     object-fit: cover;
@@ -83,6 +88,27 @@ hr {
 
     display: inline-block;
 
+}
+
+#info-block {
+    background-image: radial-gradient(circle at right, rgb(22, 105, 95), rgb(13, 69, 23));
+    
+    border-radius: 1%;
+    border-color: #2aa198;
+    border: 1px solid #2aa198;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 1%;
+
+    width: fit-content;
+    height: auto;
+    display: flexbox;
+    justify-content: center;
 }
 
 .section-header {
@@ -124,9 +150,40 @@ hr {
 
 }
 
+footer {
+    background-image: radial-gradient(circle at right, rgb(22, 105, 95), rgb(13, 69, 23));
+    
+    border-radius: 1%;
+    border-color: #2aa198;
+    border: 1px solid #2aa198;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 1%;
+
+    width: 90%;
+    height: auto;
+    display: flexbox;
+    justify-content: center;
+
+}
+
+#References, #ref {
+    font-size: small;
+}
 
 .table {
     border: 2px solid black;
     border-collapse: collapse;
+    background-color:#103a45;
+    
+    padding: 5px;
+    
+    display: flexbox;
+    justify-content: center;
+
 }
