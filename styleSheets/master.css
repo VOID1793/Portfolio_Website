@@ -2,7 +2,8 @@ html {
     background-image: radial-gradient(circle at center, #0d5165, #103a45);
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
-    color: #b58900;
+    color: #c99700;
+    font-size: larger;
 }
 
 html::before {
@@ -19,56 +20,111 @@ html::before {
     z-index: -1;
 }
 
-a {
-    color: inherit;
-    text-decoration: underline;
+hr {
+    background-color: #c99700;
+    border: none;
+    height: 1px;
 }
 
-
-#headshot {
-    width: 5%;
-    height: auto;
-
-    object-fit: cover;
-    border-radius: 5%;
-
-}
-
-
-
-
-
-
-
-#navigation {
+#navigation nav{
 
     background-image: radial-gradient(circle at right, rgb(22, 105, 95), rgb(13, 69, 23));
-    padding: 10px, 20px;
-    margin-bottom: 16px;
 
-    border-radius: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin: 10px;
+
+    border-radius: 5%;
     border-color: #2aa198;
-    border: 2px solid #2aa198;
+    border: 1px solid #2aa198;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
     color: #b58900;
+    
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    
+}
+
+.navlinks {
+    text-decoration: inherit;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color: #c99700;
+
+}
+
+.navlinks:hover {
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    color: #ffbf00;
+
+    background-color: #103a45;
+    border-radius: 5%;
+    padding: 10px;
+
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#headshot {
+    width: 10%;
+    height: auto;
+
+    object-fit: cover;
+    border-radius: 5%;
 
     display: inline-block;
+
 }
 
 .section-header {
     background-image: radial-gradient(circle at right, rgb(22, 105, 95), rgb(13, 69, 23));
-    padding: 10px, 20px;
-    margin-bottom: 16px;
+    
     border-radius: 5%;
     border-color: #2aa198;
-    border: 2px solid #2aa198;
+    border: 1px solid #2aa198;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     display: inline-block;
 }
+
+#personal-summary-section, #awards-and-accolades-section, #education-and-certification-section,
+#working-experience-section {
+    background-image: radial-gradient(circle at right, rgb(22, 105, 95), rgb(13, 69, 23));
+    
+    border-radius: 1%;
+    border-color: #2aa198;
+    border: 1px solid #2aa198;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 1%;
+
+    width: 90%;
+    height: auto;
+    display: flexbox;
+    justify-content: center;
+
+}
+
+
 
 .table {
     border: 2px solid black;
